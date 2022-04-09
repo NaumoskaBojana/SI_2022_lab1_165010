@@ -3,4 +3,5 @@
 3.Avocado x 5
 4.Honey x 1
 5.Shampoo x 1
+6.Butter x 2
 
