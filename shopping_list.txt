@@ -1,6 +1,6 @@
-1.Chocolate
-2.Milk
-3.Avocado
-4.Cheese
-5.Shampoo
+1.Chocolate x 3
+2.Milk x 2
+3.Avocado x 5
+4.Cheese x 1
+5.Shampoo x 1
 
