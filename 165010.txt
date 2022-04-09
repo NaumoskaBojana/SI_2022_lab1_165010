@@ -1,0 +1,261 @@
+1. https://github.com/NaumoskaBojana
+2. Promena na imeto na glavnata granka od main vo master
+3. https://github.com/NaumoskaBojana/SI_2022_lab1_165010
+4. git clone https://github.com/NaumoskaBojana/SI_2022_lab1_165010
+cd SI_2022_lab1_165010
+5. touch shopping_list.txt
+nano shopping_list.txt
+1.Chocolate
+2.Milk
+3.Avocado
+4.Cheese
+5.Shampoo
+
+git add shopping_list.txt
+git commit -m "Add 5 items to the shopping list"
+
+
+
+6.nano shopping_list.txt
+1.Chocolate x 3
+2.Milk x 2
+3.Avocado x 5
+4.Cheese x 1
+5.Shampoo x 1
+
+
+git add shopping_list.txt
+
+git commit -m "Add quantities to the items."
+
+7. git branch branch1
+git branch branch2
+
+8.  git log
+commit 3914beb41d578737db1587bc06001b5586719ef6 (HEAD -> master, branch2, branch1)
+Author: Bojana Naumoska <bojana.naumoska@students.finki.ukim.mk>
+Date:   Sat Apr 9 12:20:10 2022 +0200
+
+    Add quantities to the items.
+
+commit 5be53e55cf5e66edfcfc34a0ce8b05d8eb4d41b9
+Author: Bojana Naumoska <bojana.naumoska@students.finki.ukim.mk>
+Date:   Sat Apr 9 12:15:19 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit f4f1aec36633aab06cf85a6e6a652e639793f986 (origin/master, origin/HEAD)
+Author: NaumoskaBojana <101320577+NaumoskaBojana@users.noreply.github.com>
+Date:   Sat Apr 9 11:45:21 2022 +0200
+
+    Update README.md
+
+commit e867e5c9ceb6d3589508db6c8fe9f2b7b61d010e
+Author: NaumoskaBojana <101320577+NaumoskaBojana@users.noreply.github.com>
+Date:   Sat Apr 9 11:43:16 2022 +0200
+
+:...skipping...
+commit 3914beb41d578737db1587bc06001b5586719ef6 (HEAD -> master, branch2, branch1)
+Author: Bojana Naumoska <bojana.naumoska@students.finki.ukim.mk>
+Date:   Sat Apr 9 12:20:10 2022 +0200
+
+    Add quantities to the items.
+
+commit 5be53e55cf5e66edfcfc34a0ce8b05d8eb4d41b9
+Author: Bojana Naumoska <bojana.naumoska@students.finki.ukim.mk>
+Date:   Sat Apr 9 12:15:19 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit f4f1aec36633aab06cf85a6e6a652e639793f986 (origin/master, origin/HEAD)
+Author: NaumoskaBojana <101320577+NaumoskaBojana@users.noreply.github.com>
+Date:   Sat Apr 9 11:45:21 2022 +0200
+
+    Update README.md
+
+commit e867e5c9ceb6d3589508db6c8fe9f2b7b61d010e
+Author: NaumoskaBojana <101320577+NaumoskaBojana@users.noreply.github.com>
+Date:   Sat Apr 9 11:43:16 2022 +0200
+
+    Initial commit
+~
+
+9. git push -u origin master
+
+10. git checkout branch1
+Switched to branch 'branch1'
+
+11. nano shopping_list.txt
+1.Chocolate x 3
+2.Milk x 2
+3.Avocado x 5
+4.Cheese x 1
+5.Shampoo x 2
+
+git add shopping_list.txt
+
+git commit -m "Change quantity of item #5"
+[branch1 4615587] Change quantity of item #5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+12.$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+13. nano shopping_list.txt
+1.Chocolate x 3
+2.Milk x 1
+3.Avocado x 5
+4.Cheese x 1
+5.Shampoo x 2
+
+git add shopping_list.txt
+git commit -m "Change quantity of item #2"
+[master d4e3df8] Change quantity of item #2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+14.  $  git push --all origin
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 577 bytes | 577.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/NaumoskaBojana/SI_2022_lab1_165010
+   3914beb..d4e3df8  master -> master
+ * [new branch]      branch1 -> branch1
+ * [new branch]      branch2 -> branch2
+
+15.  git checkout branch2
+
+16. nano shopping_list.txt
+1.Chocolate x 3
+2.Milk x 1
+3.Avocado x 5
+4.Honey x 1
+5.Shampoo x 2
+
+git add shopping_list.txt
+$ git commit -m "Modify item #4"
+[branch2 7c872f0] Modify item #4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+17. $ git log
+commit 7c872f0441b6f6da59568da1fd47a660d995c0a5 (HEAD -> branch2)
+Author: Bojana Naumoska <bojana.naumoska@students.finki.ukim.mk>
+Date:   Sat Apr 9 12:46:56 2022 +0200
+
+    Modify item #4
+
+commit 3914beb41d578737db1587bc06001b5586719ef6 (origin/branch2)
+Author: Bojana Naumoska <bojana.naumoska@students.finki.ukim.mk>
+Date:   Sat Apr 9 12:20:10 2022 +0200
+
+    Add quantities to the items.
+
+commit 5be53e55cf5e66edfcfc34a0ce8b05d8eb4d41b9
+Author: Bojana Naumoska <bojana.naumoska@students.finki.ukim.mk>
+Date:   Sat Apr 9 12:15:19 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit f4f1aec36633aab06cf85a6e6a652e639793f986
+Author: NaumoskaBojana <101320577+NaumoskaBojana@users.noreply.github.com>
+Date:   Sat Apr 9 11:45:21 2022 +0200
+
+    Update README.md
+:
+
+18. nano shopping_list.txt
+1.Chocolate x 3
+2.Milk x 1
+3.Avocado x 5
+4.Honey x 1
+5.Shampoo x 2
+6.Butter x2
+
+git add shopping_list.txt
+
+git commit -m "Modify item #4 and add item #6"
+[branch2 7e92efa] Modify item #4 and add item #6
+ 1 file changed, 1 insertion(+)
+
+19. git log
+commit 7e92efae0e67339df5785e21bac6ee90d7de8a30 (HEAD -> branch2)
+Author: Bojana Naumoska <bojana.naumoska@students.finki.ukim.mk>
+Date:   Sat Apr 9 12:52:03 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 7c872f0441b6f6da59568da1fd47a660d995c0a5
+Author: Bojana Naumoska <bojana.naumoska@students.finki.ukim.mk>
+Date:   Sat Apr 9 12:46:56 2022 +0200
+
+    Modify item #4
+
+commit 3914beb41d578737db1587bc06001b5586719ef6 (origin/branch2)
+Author: Bojana Naumoska <bojana.naumoska@students.finki.ukim.mk>
+Date:   Sat Apr 9 12:20:10 2022 +0200
+
+    Add quantities to the items.
+
+commit 5be53e55cf5e66edfcfc34a0ce8b05d8eb4d41b9
+Author: Bojana Naumoska <bojana.naumoska@students.finki.ukim.mk>
+Date:   Sat Apr 9 12:15:19 2022 +0200
+
+    Add 5 items to the shopping list
+:
+
+20. git checkout master
+git merge branch1
+$ git commit -m "Modify item #4"
+[branch2 7c872f0] Modify item #4
+Merge made by the 'recursive' strategy.
+ shopping_list.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+21. git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
