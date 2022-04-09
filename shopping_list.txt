@@ -2,5 +2,5 @@
 2.Milk x 1
 3.Avocado x 5
 4.Cheese x 1
-5.Shampoo x 1
+5.Shampoo x 2
 
