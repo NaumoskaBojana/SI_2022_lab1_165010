@@ -220,6 +220,11 @@ Auto-merging shopping_list.txt
 CONFLICT (content): Merge conflict in shopping_list.txt
 Automatic merge failed; fix conflicts and then commit the result.
 
+22. git add 165010.txt
+23. git commit -m "Add docs"
+23. git push --all origin
+
+
 
 
 
